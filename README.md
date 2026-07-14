@@ -25,14 +25,18 @@
 
 ---
 
-## 📂 Depo Mimarisi (Repository Structure)
+## 📂 Güncel Depo Mimarisi (Repository Structure)
 
 ```text
 bkucuk-dvt-optlab-2026/
-├── .gitignore               # Ignored system, cache, and large weights files
-├── README.md                # Project overview and status tracking
-├── requirements.txt         # Dependency management for reproducibility
-├── literature/              # Week 1: Survey tables and literature reviews
-├── benchmarks/              # Week 2: Baseline Colab notebooks and data loaders
-├── experiments/             # Week 3: Architectural modifications and ablation runs
-└── results/                 # Week 4: Metric logs (CSV), charts, and visual proofs
+├── .gitignore                 # Ön belleği, Colab checkpointer'larını ve büyük ağırlık dosyalarını engeller
+├── LICENSE                    # MIT Açık Kaynak Lisansı
+├── README.md                  # Çift dilli proje özeti, yol haritası ve durum takibi
+├── hafta1_literatur/          # Hafta 1: Modüler literatür tarama merkezi (≥45 makale)
+│   ├── README.md              # Hafta 1 ana özeti, makale dağılımı ve genel değerlendirme
+│   ├── 01_deblurring_literatur.md     # Görüntü blur giderme makaleleri (≥15 makale)
+│   ├── 02_stabilization_literatur.md  # Video stabilizasyonu makaleleri (≥15 makale)
+│   └── 03_tracking_literatur.md       # STAPLE & YOLO hibrit izleme makaleleri (≥15 makale)
+├── hafta2_pipelines/          # Hafta 2: Baseline Colab notebook'ları ve veri seti erişim notları
+├── hafta3-4_iyilestirme/      # Hafta 3-4: Seçilen alandaki özgün mimari iyileştirmeler ve test kodları
+└── sonuclar/                  # Karşılaştırmalı performans metrikleri (PSNR, SSIM, MOTA, FPS) ve grafikler
