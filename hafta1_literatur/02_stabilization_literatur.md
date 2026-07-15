@@ -3,9 +3,12 @@
 
 ## 📊 Makale Özet Tablosu
 
-| # | Başlık | Yıl | Yöntem / Algoritma | Veri Seti | Metrik (Stability / FPS) | Kod Linki |
-|---|--------|-----|--------------------|-----------|--------------------------|-----------|
-| 1 | | | | | | |
+| # | Başlık | Yıl | Yöntem / Mimari Özeti | Veri Seti | Metrik / Sonuç | Kod Linki |
+|---|---|---|---|---|---|---|
+| 1 | *Harnessing Meta-Learning for Improving Full-Frame Video Stabilization* (Ali vd.) | 2024 | Piksel seviyesinde tam kare (full-frame) video stabilizasyonu yapan sabit modellerin performansını artırmak için test zamanı adaptasyonu (test-time adaptation) yaklaşımı önerir. Modelin farklı hareket profillerine sahip girdi videolarına hızla adapte olabilmesi için meta-öğrenme (meta-learning) tekniklerini entegre eden ilk çalışmadır. | Çeşitli Gerçek Dünya Videoları | **Stabilite Artışı:** Sadece tek bir adaptasyon adımıyla stabilitede mutlak ~%8 artış sağlamış ve piksel sentezi yöntemlerinde SOTA (State-of-the-Art) sonuçlara ulaşmıştır. | [⭐ GitHub](https://github.com/MKashifAli/MetaVideoStab) |
+| 2 | *Harnessing Meta-Learning for Controllable Full-Frame Video Stabilization* (Ali vd.) | 2025 | Bir önceki çalışmayı (2024) geliştirerek videolardaki yüksek sarsıntılı bölümleri tespit eden özel bir modül (jerk localization module) ekler. Adaptasyon sürecini yalnızca bu sarsıntılı alanlara hedefleyerek (targeted adaptation) daha az işlem adımıyla maksimum stabilizasyon sağlar ve kullanıcıya klasik algoritmalar gibi kontrol mekanizmaları sunar. | Çeşitli Gerçek Dünya Videoları | **Başarım:** Hedefli adaptasyon sayesinde daha az işlem gücüyle yüksek stabilite ve görsel kalite artışı; modern izleyicilerin SOTA performansını aşmıştır. | [⭐ GitHub](https://github.com/MKashifAli/MetaVideoStab) / [arXiv](https://arxiv.org/abs/2508.18859) | |
+| 3 | *Deep matching online video stabilization using TSNet* (Wang vd.) | 2024 | Klasik optik akış yerine derin anahtar nokta eşlemesi (deep matching) ile kamera hareketini tahmin eden gözetimsiz (unsupervised) çevrimiçi bir stabilizasyon çerçevesidir. Öğrenme tabanlı modellerin veri kısıtlaması sorununu aşmak için kamera yörüngelerini pürüzsüzleştiren tak-çalıştır bir ağ (TSNet) ve çok iş parçacıklı tamponlama mekanizması kullanır. | Özel Eğitim Seti / Stabil-Unstabil Video Çiftleri | **Hız ve Sağlamlık:** Sınırlı donanımlardaki verimsizlikleri çözmüş, geleneksel 3 aşamalı stabilizasyon ardışık düzeninde yüksek doğruluk oranlarına ulaşmıştır. | ❌ Repo Mevcut Değil |
+| 4 | *A Real-Time Video Stabilization Algorithm Based on XFeat Keypoints* (Ma vd.) | 2025 | Geleneksel yörünge stabilizasyonunu derin öğrenme tabanlı XFeat özellik çıkarımı ile harmanlar. Geometrik kısıtlamalı homojen örnekleme ile anahtar noktaları tespit eder, geliştirilmiş Lucas-Kanade optik akış ile takip yapar ve Numba ile hızlandırılmış dinamik çevrimiçi yörünge düzeltme modülü uygular. | Herkese Açık Benchmark Videoları | **Gecikme (Latency):** Kare başına ortalama ~20 ms (50 FPS) işlem hızı. SOTA yöntemlerle rekabet eden stabilizasyon kalitesini gerçek zamanlı performansta sunmuştur. | ❌ Repo Mevcut Değil |
 
 ---
 ## 🧠 Alan Değerlendirmesi (State-of-the-Art)
