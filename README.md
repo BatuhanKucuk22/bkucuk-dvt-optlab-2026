@@ -18,8 +18,8 @@
 
 | Hafta | Odak (Focus) | Çıktı Hedefi (Deliverable) | Durum (Status) |
 | :---: | :--- | :--- | :---: |
-| **Hafta 1** | Literatür Taraması (Literature Survey) | 2025-2026 arası ≥45 makale analizi ve özet tablosu (`literature/`) | 🟡 *Devam Ediyor (In Progress)* |
-| **Hafta 2** | Boru Hattı Kurulumu (Pipeline Setup) | Google Colab üzerinde 3 çalışan notebook & baseline metrikleri (`benchmarks/`) | ⚪ *Beklemede (Pending)* |
+| **Hafta 1** | Literatür Taraması (Literature Survey) | 2025-2026 arası ≥45 makale analizi ve özet tablosu (`literature/`) | 🟢 *Tamamlandı (Completed)* |
+| **Hafta 2** | Boru Hattı Kurulumu (Pipeline Setup) | Google Colab üzerinde 3 çalışan notebook & baseline metrikleri (`benchmarks/`) | 🟡 *Başlandı / Devam Ediyor (Started / In Progress)* |
 | **Hafta 3** | Özgün İyileştirme (Optimization) | Seçilen alanda mimari/algoritmik katkı ve ablation testleri (`experiments/`) | ⚪ *Beklemede (Pending)* |
 | **Hafta 4** | Kıyaslama & Raporlama (Final Evaluation) | Karşılaştırmalı metrik analiz raporu ve teknik blog/makale çıktısı (`results/`) | ⚪ *Beklemede (Pending)* |
 
