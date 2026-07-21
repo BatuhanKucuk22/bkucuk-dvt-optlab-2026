@@ -28,15 +28,19 @@
 ## 📂 Güncel Depo Mimarisi (Repository Structure)
 
 ```text
-bkucuk-dvt-optlab-2026/
-├── .gitignore                 # Ön belleği, Colab checkpointer'larını ve büyük ağırlık dosyalarını engeller
-├── LICENSE                    # MIT Açık Kaynak Lisansı
-├── README.md                  # Çift dilli proje özeti, yol haritası ve durum takibi
-├── hafta1_literatur/          # Hafta 1: Modüler literatür tarama merkezi (≥45 makale)
-│   ├── README.md              # Hafta 1 ana özeti, makale dağılımı ve genel değerlendirme
-│   ├── 01_deblurring_literatur.md     # Görüntü blur giderme makaleleri (≥15 makale)
-│   ├── 02_stabilization_literatur.md  # Video stabilizasyonu makaleleri (≥15 makale)
-│   └── 03_tracking_literatur.md       # STAPLE & YOLO hibrit izleme makaleleri (≥15 makale)
-├── hafta2_pipelines/          # Hafta 2: Baseline Colab notebook'ları ve veri seti erişim notları
-├── hafta3-4_iyilestirme/      # Hafta 3-4: Seçilen alandaki özgün mimari iyileştirmeler ve test kodları
-└── sonuclar/                  # Karşılaştırmalı performans metrikleri (PSNR, SSIM, MOTA, FPS) ve grafikler
+├── hafta1_literatur/          # Literatür analizleri ve SOTA makale özetleri
+│   ├── 01_deblurring_literatur.md
+│   ├── 02_stabilization_literatur.md
+│   ├── 03_tracking_literatur.md
+│   └── README.md
+├── hafta2_pipelines/          # Uygulamalı Baseline Colab Notebook'ları
+│   ├── 01_deblurring_baseline.ipynb       # DeepRFT tabanlı görüntü bulanıklığı giderme
+│   ├── 02_stabilization_baseline.ipynb    # LightStab tabanlı çevrimiçi video stabilizasyonu
+│   ├── 03_hybrid_tracking_baseline.ipynb  # Hibrit nesne takibi ardışık düzeni
+│   └── README.md
+├── hafta3-4_iyilestirme/      # Mimari iyileştirmeler, ablation çalışmaları ve optimizasyonlar
+└── raporlar/                  # Günlük staj raporları ve teknik ilerleme belgeleri
+    ├── 2026-07-15_gunluk_rapor.md
+    ├── 2026-07-16_gunluk_rapor.md
+    ├── 2026-07-17_gunluk_rapor.md
+    └── 2026-07-20_gunluk_rapor.md
