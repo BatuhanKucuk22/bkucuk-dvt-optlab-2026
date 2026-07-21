@@ -39,8 +39,11 @@
 │   ├── 03_hybrid_tracking_baseline.ipynb  # Hibrit nesne takibi ardışık düzeni
 │   └── README.md
 ├── hafta3-4_iyilestirme/      # Mimari iyileştirmeler, ablation çalışmaları ve optimizasyonlar
-└── raporlar/                  # Günlük staj raporları ve teknik ilerleme belgeleri
-    ├── 2026-07-15_gunluk_rapor.md
-    ├── 2026-07-16_gunluk_rapor.md
-    ├── 2026-07-17_gunluk_rapor.md
-    └── 2026-07-20_gunluk_rapor.md
+│   └── README.md
+├── raporlar/                  # Günlük staj raporları ve teknik ilerleme belgeleri
+│   ├── 2026-07-15_gunluk_rapor.md
+│   ├── 2026-07-16_gunluk_rapor.md
+│   ├── 2026-07-17_gunluk_rapor.md
+│   └── 2026-07-20_gunluk_rapor.md
+└── sonuclar/                  # Karşılaştırmalı Performans Metrikleri (PSNR, SSIM, MOTA, FPS)[cite: 4]
+    └── README.md
