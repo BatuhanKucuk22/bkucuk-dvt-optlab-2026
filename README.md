@@ -8,9 +8,9 @@
 
 ## 🎯 Proje Odak Alanları (Core Research Domains)
 
-1. **Image Deblurring (Spatial Enhancement):** Motion and defocus blur restoration using modern architectures (e.g., DeblurGAN-v2, Restormer, NAFNet).
-2. **Video Stabilization (Temporal Smoothness):** Online and causal video stabilization techniques targeting real-time performance and low latency.
-3. **Hybrid Target Tracking:** Integrating STAPLE (complementary tracking) with YOLO tracking-by-detection paradigms for robust multi-object tracking.
+1. **Image Deblurring (Spatial Enhancement):** Motion and defocus blur restoration using modern architectures (e.g., DeepRFT, DeblurGAN-v2).
+2. **Video Stabilization (Temporal Smoothness):** Online and causal video stabilization techniques targeting real-time performance and low latency (e.g., LightStab).
+3. **Hybrid Target Tracking:** Integrating SOTA detection (YOLOX) with motion prediction (HybridSORT) and Classical CV (MOG2) for robust, scene-adaptive multi-object tracking.
 
 ---
 
@@ -18,10 +18,10 @@
 
 | Hafta | Odak (Focus) | Çıktı Hedefi (Deliverable) | Durum (Status) |
 | :---: | :--- | :--- | :---: |
-| **Hafta 1** | Literatür Taraması (Literature Survey) | 2025-2026 arası ≥45 makale analizi ve özet tablosu (`literature/`) | 🟢 *Tamamlandı (Completed)* |
-| **Hafta 2** | Boru Hattı Kurulumu (Pipeline Setup) | Google Colab üzerinde 3 çalışan notebook & baseline metrikleri (`benchmarks/`) | 🟡 *Başlandı / Devam Ediyor (Started / In Progress)* |
-| **Hafta 3** | Özgün İyileştirme (Optimization) | Seçilen alanda mimari/algoritmik katkı ve ablation testleri (`experiments/`) | ⚪ *Beklemede (Pending)* |
-| **Hafta 4** | Kıyaslama & Raporlama (Final Evaluation) | Karşılaştırmalı metrik analiz raporu ve teknik blog/makale çıktısı (`results/`) | ⚪ *Beklemede (Pending)* |
+| **Hafta 1** | Literatür Taraması (Literature Survey) | 2025-2026 arası ≥45 makale analizi ve özet tablosu (`hafta1_literatur/`) | 🟢 *Tamamlandı (Completed)* |
+| **Hafta 2** | Boru Hattı Kurulumu (Pipeline Setup) | Google Colab üzerinde tam otonom çalışan notebooklar & zırhlı ortam kurulumları (`hafta2_pipelines/`) | 🟢 *Tamamlandı (Completed)* |
+| **Hafta 3** | Özgün İyileştirme (Optimization) | Baseline metriklerinin ölçümü, SOTA kıyaslamaları ve mimari optimizasyonlar (`hafta3-4_iyilestirme/`) | 🟡 *Başlandı / Devam Ediyor (Started / In Progress)* |
+| **Hafta 4** | Kıyaslama & Raporlama (Final Evaluation) | Karşılaştırmalı metrik analiz raporu ve teknik blog/makale çıktısı (`sonuclar/`) | ⚪ *Beklemede (Pending)* |
 
 ---
 
@@ -33,17 +33,20 @@
 │   ├── 02_stabilization_literatur.md
 │   ├── 03_tracking_literatur.md
 │   └── README.md
-├── hafta2_pipelines/          # Uygulamalı Baseline Colab Notebook'ları
-│   ├── 01_deblurring_baseline.ipynb       # DeepRFT tabanlı görüntü bulanıklığı giderme
-│   ├── 02_stabilization_baseline.ipynb    # LightStab tabanlı çevrimiçi video stabilizasyonu
-│   ├── 03_hybrid_tracking_baseline.ipynb  # Hibrit nesne takibi ardışık düzeni
+├── hafta2_pipelines/          # Uygulamalı Baseline Colab Notebook'ları ve Otonom Mimari
+│   ├── MOT17_Test.ipynb                       # Otonom GT simülatörü ve Native HOTA metrik motoru
+│   ├── Hybrid_Pipeline_car_person_gemini.ipynb  # Kinematik zırhlı, derin öğrenme (YOLOX) odaklı MOT mimarisi
+│   ├── Hybrid_Pipeline_car_person_claude.ipynb  # Otonom karar mekanizmalı, sahne adaptif (MOG2/YOLO) MOT mimarisi
+│   ├── 01_deblurring_baseline.ipynb           # DeepRFT tabanlı görüntü bulanıklığı giderme
+│   ├── 02_stabilization_baseline.ipynb        # LightStab tabanlı çevrimiçi video stabilizasyonu
+│   ├── 03_hybrid_tracking_baseline.ipynb      # Hibrit nesne takibi ardışık düzeni
 │   └── README.md
 ├── hafta3-4_iyilestirme/      # Mimari iyileştirmeler, ablation çalışmaları ve optimizasyonlar
 │   └── README.md
 ├── raporlar/                  # Günlük staj raporları ve teknik ilerleme belgeleri
-│   ├── 2026-07-15_gunluk_rapor.md
-│   ├── 2026-07-16_gunluk_rapor.md
-│   ├── 2026-07-17_gunluk_rapor.md
-│   └── 2026-07-20_gunluk_rapor.md
-└── sonuclar/                  # Karşılaştırmalı Performans Metrikleri (PSNR, SSIM, MOTA, FPS)[cite: 4]
+│   ├── 2026-07-28_gunluk_rapor.md             # Split-Alpha EMA ve Evrensel Mimari Entegrasyon Raporu
+│   ├── 2026-07-29_gunluk_rapor.md             # HOTA Entegrasyonu, Kırık Link Kalkanı ve PyTorch/NumPy Zırhlaması
+│   ├── AI_Tools_Review.md                     # Gemini ve Claude algoritmik felsefelerinin kantitatif çapraz analizi
+│   └── (Önceki günlere ait günlük raporlar...)
+└── sonuclar/                  # Karşılaştırmalı Performans Metrikleri ve Final Çıktılar
     └── README.md
